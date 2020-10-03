@@ -11,12 +11,16 @@ const { inputStream } = require('./inputStream');
 const { outputStream} = require('./outputStream');
 const { encode } = require('./cipher');
 const { decode } = require('./cipher');
+const CustomError = require('./CustomError');
 
 try {
 	var shift = argv['s'] || argv['shift'];
 	var input = argv['i'] || argv['input'];
 	var output = argv['o'] || argv['output'];
 	var action = argv['a'] || argv['action'];
+
+	if (Array.isArray(shift) || Array.isArray(input) || 
+		Array.isArray(output) || Array.isArray(action)) throw new CustomError("Options error", 3);
 
 	checkArgs(shift, action);
 
