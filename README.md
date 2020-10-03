@@ -1,3 +1,5 @@
+# Caesar cipher CLI tool
+
 Implementation of [Task 1. "Caesar cipher CLI tool"](https://github.com/KostyaKulak/CaesarCipher/blob/master/README.md#task-1-caesar-cipher-cli-tool), that will encode and decode a text by [Caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher).
 
 **Instruction:**
