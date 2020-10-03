@@ -16,7 +16,7 @@ CLI tool accept 4 options (short alias and full name):
 3.  **-o, --output**: an output file
 4.  **-a, --action**: an action encode/decode (**required**)
 
-Negative value of shift can be added in quotes (example: --shift "-7"). If the input file option is missed - input source text in command line. If the output file option is missed - output text will be shown on the command line.
+Negative value can be added via equal sign (example: --shift=-7). If the input file option is missed - input source text in command line. If the output file option is missed - output text will be shown on the command line.
 
 **Usage example:**
 
