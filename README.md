@@ -7,7 +7,7 @@ Implementation of [Task 1. "Caesar cipher CLI tool"](https://github.com/KostyaKu
 - Download source code (git clone or download ZIP)
 - Open command promt and change current directory to downloaded source code folder (/caesar-cipher-cli)
 - run command ```npm install```
-- to start Caesar cipher CLI tool type ```node src/my_caesar_cli``` with options
+- to start Caesar cipher CLI tool type ```node my_caesar_cli``` with options
 
 CLI tool accept 4 options (short alias and full name):
 
@@ -21,6 +21,7 @@ Negative value can be added via equal sign (example: --shift=-7). If the input f
 **Usage example:**
 
 ```bash
+$ cd src
 $ node my_caesar_cli -a encode -s 7 -i "./input.txt" -o "./output.txt"
 ```
 
