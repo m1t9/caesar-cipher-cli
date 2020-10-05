@@ -1,5 +1,5 @@
 exports.encode = (shift) => {
-	return function (buffer, aaa, callback) {
+	return function (buffer, enc, callback) {
 
 		for (let i = 0; i < buffer.length; i++) {
 			if (buffer[i] >= 65 && buffer[i] <= 90) {
@@ -18,7 +18,7 @@ exports.encode = (shift) => {
 }
 
 exports.decode = (shift) => {
-	return function (buffer, aaa, callback) {
+	return function (buffer, enc, callback) {
 		for (let i = 0; i < buffer.length; i++) {
 			if (buffer[i] >= 65 && buffer[i] <= 90) {
 				buffer[i] -= shift;

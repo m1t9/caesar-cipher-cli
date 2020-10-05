@@ -26,13 +26,13 @@ try {
 
 	checkArgs(shift, action);
 
-	pipeline (
+	pipeline(
 		inputStream(input),
 		(action === 'encode') ? through2(encode(shift)) : through2(decode(shift)),
 		outputStream(output),
 		complete => {
 			outputStream(output).write('\n');
-			console.log(action + " completed");
+			console.log(action + " completed.");
 	  });
 
 } catch (error) {
