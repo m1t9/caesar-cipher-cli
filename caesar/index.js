@@ -19,7 +19,7 @@ try {
 	var output = argv['o'] || argv['output'];
 	var action = argv['a'] || argv['action'];
 
-	if ((argv['s'] && argv['shift']) || (input = argv['i'] && argv['input']) ||
+	if ((argv['s'] && argv['shift']) || (argv['i'] && argv['input']) ||
 		(argv['o'] && argv['output']) || (argv['a'] && argv['action']) || 
 		Array.isArray(shift) || Array.isArray(input) || 
 		Array.isArray(output) || Array.isArray(action)) throw new CustomError("Options error", 3);
