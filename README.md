@@ -7,7 +7,7 @@ Implementation of [Task 1. "Caesar cipher CLI tool"](https://github.com/KostyaKu
 - Download source code (git clone or download ZIP)
 - Open command promt and change current directory to downloaded source code folder (/caesar-cipher-cli)
 - run command ```npm install```
-- to start Caesar cipher CLI tool type ```node my_caesar_cli``` with options
+- to start Caesar cipher CLI tool type ```node caesar``` with options
 
 CLI tool accept 4 options (short alias and full name):
 
