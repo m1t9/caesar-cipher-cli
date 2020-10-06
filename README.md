@@ -21,18 +21,15 @@ Negative value can be added via equal sign (example: --shift=-7). If the input f
 **Usage example:**
 
 ```bash
-$ cd src
-$ node my_caesar_cli -a encode -s 7 -i "./input.txt" -o "./output.txt"
+$ node caesar -a encode -s 7 -i "./input.txt" -o "./output.txt"
 ```
 
 ```bash
-$ cd src
-$ node my_caesar_cli --action encode --shift 7 --input plain.txt --output encoded.txt
+$ node caesar --action encode --shift 7 --input plain.txt --output encoded.txt
 ```
 
 ```bash
-$ cd src
-$ node my_caesar_cli --action decode --shift 7 --input decoded.txt --output plain.txt
+$ node caesar --action decode --shift 7 --input decoded.txt --output plain.txt
 ```
 
 > input.txt
